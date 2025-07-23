@@ -145,10 +145,42 @@ const Dashboard = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-gray-200 to-gray-300">
               
               {/* Buildings */}
-              <div className="absolute bottom-20 left-1/4 w-16 h-24 bg-gray-600 shadow-lg transform rotate-12"></div>
-              <div className="absolute bottom-20 left-1/3 w-12 h-32 bg-gray-700 shadow-lg"></div>
-              <div className="absolute bottom-20 left-1/2 w-20 h-20 bg-gray-500 shadow-lg transform -rotate-6"></div>
-              <div className="absolute bottom-20 right-1/3 w-14 h-28 bg-gray-600 shadow-lg transform rotate-3"></div>
+              <div className="absolute bottom-20 left-1/4 w-16 h-24 bg-gray-600 shadow-xl">
+                <div className="w-full h-full bg-gradient-to-t from-gray-700 to-gray-500 relative">
+                  <div className="absolute top-2 left-2 w-2 h-2 bg-yellow-200 opacity-60"></div>
+                  <div className="absolute top-2 right-2 w-2 h-2 bg-yellow-200 opacity-40"></div>
+                  <div className="absolute top-6 left-2 w-2 h-2 bg-yellow-200 opacity-70"></div>
+                  <div className="absolute top-10 right-2 w-2 h-2 bg-yellow-200 opacity-30"></div>
+                </div>
+              </div>
+              <div className="absolute bottom-20 left-1/3 w-12 h-32 bg-gray-700 shadow-xl">
+                <div className="w-full h-full bg-gradient-to-t from-gray-800 to-gray-600 relative">
+                  <div className="absolute top-3 left-1 w-1.5 h-1.5 bg-yellow-200 opacity-50"></div>
+                  <div className="absolute top-3 right-1 w-1.5 h-1.5 bg-yellow-200 opacity-60"></div>
+                  <div className="absolute top-8 left-1 w-1.5 h-1.5 bg-yellow-200 opacity-40"></div>
+                  <div className="absolute top-8 right-1 w-1.5 h-1.5 bg-yellow-200 opacity-70"></div>
+                  <div className="absolute top-13 left-1 w-1.5 h-1.5 bg-yellow-200 opacity-30"></div>
+                </div>
+              </div>
+              <div className="absolute bottom-20 left-1/2 w-20 h-20 bg-gray-500 shadow-xl transform -rotate-6">
+                <div className="w-full h-full bg-gradient-to-t from-gray-600 to-gray-400 relative">
+                  <div className="absolute top-2 left-3 w-2 h-2 bg-yellow-200 opacity-60"></div>
+                  <div className="absolute top-2 right-3 w-2 h-2 bg-yellow-200 opacity-40"></div>
+                  <div className="absolute top-6 left-3 w-2 h-2 bg-yellow-200 opacity-50"></div>
+                  <div className="absolute top-6 right-3 w-2 h-2 bg-yellow-200 opacity-70"></div>
+                  <div className="absolute top-10 left-6 w-2 h-2 bg-yellow-200 opacity-30"></div>
+                </div>
+              </div>
+              <div className="absolute bottom-20 right-1/3 w-14 h-28 bg-gray-600 shadow-xl transform rotate-3">
+                <div className="w-full h-full bg-gradient-to-t from-gray-700 to-gray-500 relative">
+                  <div className="absolute top-2 left-2 w-1.5 h-1.5 bg-yellow-200 opacity-50"></div>
+                  <div className="absolute top-2 right-2 w-1.5 h-1.5 bg-yellow-200 opacity-60"></div>
+                  <div className="absolute top-6 left-2 w-1.5 h-1.5 bg-yellow-200 opacity-40"></div>
+                  <div className="absolute top-6 right-2 w-1.5 h-1.5 bg-yellow-200 opacity-70"></div>
+                  <div className="absolute top-10 left-2 w-1.5 h-1.5 bg-yellow-200 opacity-30"></div>
+                  <div className="absolute top-14 right-2 w-1.5 h-1.5 bg-yellow-200 opacity-40"></div>
+                </div>
+              </div>
               
               {/* Terrain/Rubble areas */}
               <div className="absolute bottom-0 left-1/4 w-32 h-16 bg-amber-200 rounded-full opacity-70 transform rotate-12"></div>
@@ -171,15 +203,6 @@ const Dashboard = () => {
                   {Array.from({ length: 48 }).map((_, i) => (
                     <div key={i} className="border border-gray-400"></div>
                   ))}
-                </div>
-              </div>
-              
-              {/* Center info */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center bg-white/20 backdrop-blur rounded-lg p-4">
-                  <Map className="h-8 w-8 text-gray-600 mx-auto mb-2" />
-                  <p className="text-gray-700 font-medium text-sm">3D SAR Scene Preview</p>
-                  <p className="text-xs text-gray-600">Interactive simulation environment</p>
                 </div>
               </div>
             </div>
