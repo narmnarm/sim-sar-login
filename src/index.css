@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -37,6 +40,18 @@ All colors MUST be HSL.
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
+    
+    /* Panel backgrounds */
+    --panel-background: 0 0% 98%;
+    --panel-border: 220 13% 91%;
+    --panel-shadow: 220 13% 91% / 0.5;
+    
+    /* Simulation colors */
+    --survivor-high: 0 84% 60%;
+    --survivor-medium: 45 93% 58%;
+    --survivor-low: 142 76% 36%;
+    --coverage-area: 217 91% 60%;
+    --terrain-risk: 350 89% 60%;
 
     --sidebar-background: 0 0% 98%;
 

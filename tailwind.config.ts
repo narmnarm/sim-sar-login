@@ -20,6 +20,8 @@ export default {
 		extend: {
 			fontFamily: {
 				'instrument': ['Instrument Serif', 'serif'],
+				'inter': ['Inter', 'sans-serif'],
+				'sans': ['Inter', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -64,6 +66,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				panel: {
+					DEFAULT: 'hsl(var(--panel-background))',
+					border: 'hsl(var(--panel-border))',
+					shadow: 'hsl(var(--panel-shadow))'
+				},
+				simulation: {
+					'survivor-high': 'hsl(var(--survivor-high))',
+					'survivor-medium': 'hsl(var(--survivor-medium))',
+					'survivor-low': 'hsl(var(--survivor-low))',
+					'coverage': 'hsl(var(--coverage-area))',
+					'risk': 'hsl(var(--terrain-risk))'
 				}
 			},
 			borderRadius: {
